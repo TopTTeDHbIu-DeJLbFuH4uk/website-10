@@ -17,24 +17,27 @@ body {
     height: 40px;
     border-block: 1px solid #101010;
     background: #101010;
+    display: flex;
 }
 /* left icons */
-.icon-window {
+.taskbar-icon-window {
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 40px;
 }
-.icon-window:hover {
+.taskbar-icon-window:hover {
     background-color: #333333;
 }
 
-.icon-google-chrome {
+.taskbar-icon {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 40px;
 }
+
 /* right container */
 .right-container {
     width: 100%;
