@@ -1,0 +1,57 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: no-repeat center url("images/window.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+/* main container */
+.main-container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+/* left container */
+.left-container {
+    width: 100%;
+    height: 40px;
+    border-block: 1px solid #101010;
+    background: #101010;
+}
+/* left icons */
+.icon-window {
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+}
+.icon-window:hover {
+    background-color: #333333;
+}
+
+.icon-google-chrome {
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+}
+/* right container */
+.right-container {
+    width: 100%;
+    height: 40px;
+    border-block: 1px solid #101010;
+    background: #101010;
+}
+
+.minimize-all-windows {
+    display: flex;
+    justify-content: flex-end;
+    width: 4px;
+    margin-left: auto;
+    height: 40px;
+    border-left: 1px solid #707070;
+}
+
+.minimize-all-windows:hover {
+    background-color: #333333;
+}
