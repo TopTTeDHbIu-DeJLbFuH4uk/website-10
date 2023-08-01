@@ -5,53 +5,133 @@ body {
     background-size: cover;
     height: 100vh;
 }
+
 /* main container */
 .main-container {
     display: flex;
     align-items: flex-end;
     height: 100%;
 }
+
 /* left container */
 .left-container {
     width: 100%;
     height: 40px;
     border-block: 1px solid #101010;
     background: #101010;
+    display: flex;
 }
+
 /* left icons */
-.icon-window {
+.taskbar-icon-window {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 40px;
 }
-.icon-window:hover {
+.taskbar-icon-window:hover {
     background-color: #333333;
 }
 
-.icon-google-chrome {
+.taskbar-icon-google-chrome {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 50px;
     height: 40px;
 }
+
+.taskbar-icon-google-chrome:hover {
+    background-color: #333333;
+}
+
+.taskbar-icon-firefox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+}
+
+.taskbar-icon-firefox:hover {
+    background-color: #333333;
+}
+
+.taskbar-icon-calculator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 40px;
+}
+
+.taskbar-icon-calculator:hover {
+    background-color: #333333;
+}
+
 /* right container */
 .right-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 40px;
     border-block: 1px solid #101010;
     background: #101010;
 }
 
+/* right icons */
 .minimize-all-windows {
-    display: flex;
+    display: block;
     justify-content: flex-end;
     width: 4px;
-    margin-left: auto;
     height: 40px;
     border-left: 1px solid #707070;
 }
 
 .minimize-all-windows:hover {
     background-color: #333333;
+}
+
+.taskbar-icon-notification {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 50px;
+}
+
+.taskbar-icon-notification:hover {
+    background-color: #333333;
+}
+
+/* time */
+.display-time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+    margin-bottom: 5px;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 13px;
+    color: #ffff;
+}
+
+.temporary-container:hover {
+    background-color: #333333;
+}
+
+.display-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 40px;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 13px;
+    color: #ffff;
 }
