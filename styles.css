@@ -107,30 +107,19 @@ body {
 }
 
 /* time */
-.display-time {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 40px;
-    margin-bottom: 5px;
-
-    font-family: "Segoe UI", sans-serif;
-    font-size: 13px;
-    color: #ffff;
-}
-
-.temporary-container:hover {
-    background-color: #333333;
-}
-
 .taskbar-datetime {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 70px;
+    height: 40px;
 
     font-family: "Segoe UI", sans-serif;
     font-size: 13px;
     color: #ffff;
+}
+
+.taskbar-datetime:hover {
+    background-color: #333333;
 }
