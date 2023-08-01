@@ -124,12 +124,11 @@ body {
     background-color: #333333;
 }
 
-.display-date {
+.taskbar-datetime {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 40px;
 
     font-family: "Segoe UI", sans-serif;
     font-size: 13px;
