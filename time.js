@@ -1,31 +1,34 @@
+const dateElement = document.querySelector('.taskbar-date');
+const timeElement = document.querySelector('.taskbar-time');
+
+const formatDateTimePart = (number) => {
+    return String(number).padStart(2, '0');
+};
+
+const updateDate = (date) => {
+    const day = formatDateTimePart(date.getDate());
+    const month = formatDateTimePart(date.getMonth() + 1);
+    const year = String(date.getFullYear());
+
+    dateElement.textContent = `${day}.${month}.${year}`;
+};
+
+const updateTime = (date) => {
+    const hours = formatDateTimePart(date.getHours());
+    const minutes = formatDateTimePart(date.getMinutes());
+    const seconds = formatDateTimePart(date.getSeconds());
+
+    timeElement.textContent = `${hours}:${minutes}:${seconds}`;
+};
+
+const updateDateTime = () => {
+    const date = new Date();
+
+    updateTime(date);
+    updateDate(date);
+};
+
+updateDateTime();
 setInterval(function () {
-    const time = document.querySelector('.display-time');
-    let date = new Date();
-    let hours = date.getHours();
-    let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
-
-    if (hours > 12) {
-        hours = hours - 12;
-    }
-    if (seconds < 10) {
-        seconds = '0' + seconds;
-    }
-    if (minutes < 10) {
-        minutes = '0' + minutes;
-    }
-    if (hours < 10) {
-        hours = '0' + hours;
-    }
-    time.textContent = hours + ':' + minutes + ':' + seconds;
-})
-
-setInterval(function () {
-    const time = document.querySelector('.display-time');
-    let date = new Date();
-    let days = date.getDate();
-    let months = date.getMonth() + 1;
-    let years = date.getFullYear();
-
-    time.textContent = days + ':' + months + ':' + years + ':';
-})
+    updateDateTime();
+}, 1000);
