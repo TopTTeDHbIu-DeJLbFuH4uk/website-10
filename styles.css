@@ -22,7 +22,7 @@ body {
     display: flex;
 }
 
-/* left icons */
+/* window */
 .taskbar-icon-window {
     display: flex;
     align-items: center;
@@ -34,6 +34,11 @@ body {
     background-color: #333333;
 }
 
+.taskbar-icon-window:hover path {
+    fill: #6ca9d9;
+}
+
+/* google chrome */
 .taskbar-icon-google-chrome {
     display: flex;
     align-items: center;
@@ -46,6 +51,7 @@ body {
     background-color: #333333;
 }
 
+/* firefox */
 .taskbar-icon-firefox {
     display: flex;
     align-items: center;
@@ -58,6 +64,7 @@ body {
     background-color: #333333;
 }
 
+/* calculator */
 .taskbar-icon-calculator {
     display: flex;
     align-items: center;
@@ -81,7 +88,7 @@ body {
     background: #101010;
 }
 
-/* right icons */
+/* minimize all windows */
 .minimize-all-windows {
     display: block;
     justify-content: flex-end;
@@ -94,12 +101,14 @@ body {
     background-color: #333333;
 }
 
+/* notification */
 .taskbar-icon-notification {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
-    width: 50px;
+    width: 40px;
+    margin-right: 8px;
 }
 
 .taskbar-icon-notification:hover {
@@ -112,14 +121,71 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 40px;
+    width: 75px;
+    height: 100%;
 
     font-family: "Segoe UI", sans-serif;
     font-size: 13px;
     color: #ffff;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .taskbar-datetime:hover {
+    background-color: #333333;
+}
+
+/* localization */
+.taskbar-localization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 40px;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 12px;
+    color: #ffff;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.taskbar-localization:hover {
+    background-color: #333333;
+}
+
+/* speaker */
+.taskbar-speaker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 100%;
+    padding-right: 4px;
+}
+
+.taskbar-speaker:hover {
+    background-color: #333333;
+}
+
+/* internet */
+.taskbar-internet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 100%;
+    padding-right: 2px;
+}
+
+.taskbar-internet:hover {
     background-color: #333333;
 }

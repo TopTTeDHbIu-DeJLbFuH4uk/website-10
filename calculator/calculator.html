@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <!-- Comfortaa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- Kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+
+<!--    <link rel="icon" href="/calculator/images/Calculator.svg">-->
+
+    <link rel="stylesheet" href="dark-mode.css" id="theme">
+</head>
+<body>
+
+<div class="main-container">
+    <div class="title">Calculator</div>
+    <div class="container">
+        <div class="calc-container">
+            <div class="display">
+                <div class="screen-placeholder">Result</div>
+            </div>
+            <button class="clear" onclick="clearDisplay('C')">C</button>
+            <button class="button btn" onclick="addToDisplay('1')">1</button>
+            <button class="button btn" onclick="addToDisplay('2')">2</button>
+            <button class="button btn" onclick="addToDisplay('3')">3</button>
+            <button class="button btn" onclick="addToDisplay('+')">+</button>
+            <button class="button btn" onclick="addToDisplay('4')">4</button>
+            <button class="button btn" onclick="addToDisplay('5')">5</button>
+            <button class="button btn" onclick="addToDisplay('6')">6</button>
+            <button class="button btn" onclick="addToDisplay('-')">-</button>
+            <button class="button btn" onclick="addToDisplay('7')">7</button>
+            <button class="button btn" onclick="addToDisplay('8')">8</button>
+            <button class="button btn" onclick="addToDisplay('9')">9</button>
+            <button class="button btn" onclick="addToDisplay('*')">x</button>
+            <button class="button btn" onclick="addToDisplay('/')">/</button>
+            <button class="button btn" onclick="addToDisplay('0')">0</button>
+            <button class="button btn" onclick="addToDisplay('.')">.</button>
+            <button class="button btn" onclick="calculateResult('=')">=</button>
+        </div>
+        <div class="menu">
+            <button class="icon__github">
+                <a href="https://github.com/LaProfessional/Calc" target="_blank" class="git">GitHub</a>
+            </button>
+            <button class="icon__light-mode" id="LightMode">
+                <div class="light">Light Mode</div>
+            </button>
+        </div>
+    </div>
+</div>
+<script src="theme-mode.js"></script>
+<script src="math.js"></script>
+</body>
+</html>
