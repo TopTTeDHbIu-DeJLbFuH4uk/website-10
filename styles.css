@@ -23,7 +23,7 @@ body {
 }
 
 /* window */
-.taskbar-icon-window {
+.taskbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,39 +38,12 @@ body {
     fill: #6ca9d9;
 }
 
-/* google chrome */
-.taskbar-icon-google-chrome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 40px;
-}
-
 .taskbar-icon-google-chrome:hover {
     background-color: #333333;
 }
 
-/* firefox */
-.taskbar-icon-firefox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 40px;
-}
-
 .taskbar-icon-firefox:hover {
     background-color: #333333;
-}
-
-/* calculator */
-.taskbar-icon-calculator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 40px;
 }
 
 .taskbar-icon-calculator:hover {
@@ -188,4 +161,16 @@ body {
 
 .taskbar-internet:hover {
     background-color: #333333;
+}
+
+/* calculator modal window */
+.calculator-modal-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 100%;*/
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
 }
