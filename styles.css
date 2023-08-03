@@ -11,6 +11,8 @@ body {
     display: flex;
     align-items: flex-end;
     height: 100%;
+
+    position: relative;
 }
 
 /* left container */
@@ -165,12 +167,15 @@ body {
 
 /* calculator modal window */
 .calculator-modal-window {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    /*width: 100%;*/
-    height: 100%;
-    /*opacity: 0;*/
-    /*visibility: hidden;*/
     z-index: 1000;
+
+    background: #141313;
+    padding: 12px;
 }
