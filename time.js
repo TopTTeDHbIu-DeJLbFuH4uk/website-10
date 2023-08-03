@@ -7,9 +7,6 @@ setInterval(function () {
     let seconds = dateTime.getSeconds();
 
     if (hours < 10) {
-        hours = hours - 10;
-    }
-    if (hours < 10) {
         hours = '0' + hours;
     }
     if (minutes < 10) {

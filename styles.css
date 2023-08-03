@@ -7,7 +7,7 @@ body {
 }
 
 /* main container */
-.main-container {
+.general-container {
     display: flex;
     align-items: flex-end;
     height: 100%;
@@ -22,8 +22,8 @@ body {
     display: flex;
 }
 
-/* left icons */
-.taskbar-icon-window {
+/* window */
+.taskbar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,36 +34,16 @@ body {
     background-color: #333333;
 }
 
-.taskbar-icon-google-chrome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 40px;
+.taskbar-icon-window:hover path {
+    fill: #6ca9d9;
 }
 
 .taskbar-icon-google-chrome:hover {
     background-color: #333333;
 }
 
-.taskbar-icon-firefox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 40px;
-}
-
 .taskbar-icon-firefox:hover {
     background-color: #333333;
-}
-
-.taskbar-icon-calculator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 40px;
 }
 
 .taskbar-icon-calculator:hover {
@@ -81,7 +61,7 @@ body {
     background: #101010;
 }
 
-/* right icons */
+/* minimize all windows */
 .minimize-all-windows {
     display: block;
     justify-content: flex-end;
@@ -94,12 +74,14 @@ body {
     background-color: #333333;
 }
 
+/* notification */
 .taskbar-icon-notification {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
-    width: 50px;
+    width: 40px;
+    margin-right: 8px;
 }
 
 .taskbar-icon-notification:hover {
@@ -112,14 +94,83 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70px;
+    width: 75px;
     height: 100%;
 
     font-family: "Segoe UI", sans-serif;
     font-size: 13px;
     color: #ffff;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .taskbar-datetime:hover {
     background-color: #333333;
+}
+
+/* localization */
+.taskbar-localization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 40px;
+
+    font-family: "Segoe UI", sans-serif;
+    font-size: 12px;
+    color: #ffff;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.taskbar-localization:hover {
+    background-color: #333333;
+}
+
+/* speaker */
+.taskbar-speaker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 100%;
+    padding-right: 4px;
+}
+
+.taskbar-speaker:hover {
+    background-color: #333333;
+}
+
+/* internet */
+.taskbar-internet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 100%;
+    padding-right: 2px;
+}
+
+.taskbar-internet:hover {
+    background-color: #333333;
+}
+
+/* calculator modal window */
+.calculator-modal-window {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 100%;*/
+    height: 100%;
+    /*opacity: 0;*/
+    /*visibility: hidden;*/
+    z-index: 1000;
 }

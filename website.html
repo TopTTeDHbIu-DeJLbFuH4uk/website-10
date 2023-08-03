@@ -5,25 +5,72 @@
     <title>Windows 10</title>
     <!--   styles   -->
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="stylesheet" href="calculator/dark-mode.css" id="theme">
 </head>
 <body>
-<div class="main-container">
+<div class="general-container">
     <div class="left-container">
-        <div class="taskbar-icon-window">
-            <img src="images/icon-windows.svg" alt="icon-window">
+        <div class="taskbar taskbar-icon-window">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="22px" height="22px">
+                <path fill="white"
+                      d="M20 25L6 25 6 37.073 20 38.994zM20 9.101L6 11.066 6 23 20 23zM22 8.82L22 23 42 23 42 6.012zM22 25L22 39.268 42 42.012 42 25z"/>
+            </svg>
         </div>
-        <div class="taskbar-icon-google-chrome">
+        <div class="taskbar taskbar-icon-google-chrome">
             <img src="images/icon-google-chrome.svg" alt="icon-google-chrome">
         </div>
-        <div class="taskbar-icon-firefox">
+        <div class="taskbar taskbar-icon-firefox">
             <img src="images/icon-firefox.svg" alt="icon-firefox">
         </div>
-        <div class="taskbar-icon-calculator">
+        <div class="taskbar taskbar-icon-calculator">
             <img src="images/icon-calculator.svg" alt="icon-calculator">
+        </div>
+        <div class="calculator-modal-window">
+            <div class="main-container">
+                <div class="title">Calculator</div>
+                <div class="container">
+                    <div class="calc-container">
+                        <div class="display">
+                            <div class="screen-placeholder">Result</div>
+                        </div>
+                        <button class="clear" onclick="clearDisplay('C')">C</button>
+                        <button class="button btn" onclick="addToDisplay('1')">1</button>
+                        <button class="button btn" onclick="addToDisplay('2')">2</button>
+                        <button class="button btn" onclick="addToDisplay('3')">3</button>
+                        <button class="button btn" onclick="addToDisplay('+')">+</button>
+                        <button class="button btn" onclick="addToDisplay('4')">4</button>
+                        <button class="button btn" onclick="addToDisplay('5')">5</button>
+                        <button class="button btn" onclick="addToDisplay('6')">6</button>
+                        <button class="button btn" onclick="addToDisplay('-')">-</button>
+                        <button class="button btn" onclick="addToDisplay('7')">7</button>
+                        <button class="button btn" onclick="addToDisplay('8')">8</button>
+                        <button class="button btn" onclick="addToDisplay('9')">9</button>
+                        <button class="button btn" onclick="addToDisplay('*')">x</button>
+                        <button class="button btn" onclick="addToDisplay('/')">/</button>
+                        <button class="button btn" onclick="addToDisplay('0')">0</button>
+                        <button class="button btn" onclick="addToDisplay('.')">.</button>
+                        <button class="button btn" onclick="calculateResult('=')">=</button>
+                    </div>
+                    <div class="menu">
+                        <button class="icon__github">
+                            <a href="https://github.com/LaProfessional/Calc" target="_blank" class="git">GitHub</a>
+                        </button>
+                        <button class="icon__light-mode" id="LightMode">
+                            <div class="light">Light Mode</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="right-container">
+        <div class="taskbar-internet">
+            <img src="images/icon-internet.svg" alt="icon-internet">
+        </div>
+        <div class="taskbar-speaker">
+            <img src="images/icon-speaker.svg" alt="icon-speaker">
+        </div>
+        <div class="taskbar-localization">ENG</div>
         <div class="taskbar-datetime">
             <div class="taskbar-time"></div>
             <div class="taskbar-date"></div>
@@ -35,5 +82,6 @@
     </div>
 </div>
 <script src="time.js"></script>
+<script src="calculator/math.js"></script>
 </body>
 </html>
